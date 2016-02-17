@@ -1,5 +1,5 @@
 resource "aws_ebs_volume" "ebs" {
-  availability_zone = "${var.name}"
+  availability_zone = "${var.availability_zone}"
   encrypted         = "${var.encrypted}"
   iops              = "${var.iops}"
   size              = "${var.size}"
